@@ -48,7 +48,6 @@ def view_attendance():
     for name, status in students.items():
         print(f"{name}: {status}")
 
-
 def attendance_summary():
     present = sum(
         status == "Present" for status in students.values()
@@ -60,38 +59,18 @@ def attendance_summary():
         status == "Not Marked" for status in students.values()
     )
 
+    total = len(students)
+
     print("\n===== ATTENDANCE SUMMARY =====")
-    print(f"Total students: {len(students)}")
+    print(f"Total students: {total}")
     print(f"Present: {present}")
     print(f"Absent: {absent}")
     print(f"Not marked: {not_marked}")
 
-
-def main():
-    while True:
-        print("\n===== STUDENT ATTENDANCE CHECKER =====")
-        print("1. Add Student")
-        print("2. Mark Attendance")
-        print("3. View Attendance")
-        print("4. View Attendance Summary")
-        print("5. Exit")
-
-        choice = input("Choose an option: ").strip()
-
-        if choice == "1":
-            add_student()
-        elif choice == "2":
-            mark_attendance()
-        elif choice == "3":
-            view_attendance()
-        elif choice == "4":
-            attendance_summary()
-        elif choice == "5":
-            print("Thank you for using the program!")
-            break
-        else:
-            print("Invalid option. Please choose 1-5.")
+    if total > 0:
+        percentage = (present / total) * 100
+        print(f"Attendance percentage: {percentage:.2f}%")
+    else:
+        print("No students registered yet.")
 
 
-if __name__ == "__main__":
-    main()
