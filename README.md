@@ -1,14 +1,15 @@
-# My-First-Real-Repository
-# Student Attendance Checker
+# My First Real Repository
 
-Mae Ann Garbo  
-IT3R10
+## Student Attendance Checker
 
-# Description
+**Author:** Mae Ann Garbo  
+**Section:** IT3R10
+
+## Description
 
 The Student Attendance Checker is a simple Python program that allows users to add student names, mark students as Present or Absent, and view attendance records. It helps make student attendance tracking easier and more organized.
 
-# Features
+## Features
 
 - Add student names
 - Mark students as Present or Absent
@@ -16,11 +17,11 @@ The Student Attendance Checker is a simple Python program that allows users to a
 - Display an attendance summary
 - Handle invalid menu choices
 
-# Requirements
+## Requirements
 
 - Python 3 installed on your computer
 
-# How to Run
+## How to Run
 
 1. Download or clone this repository.
 2. Open the project folder in your terminal or VS Code.
@@ -30,7 +31,7 @@ The Student Attendance Checker is a simple Python program that allows users to a
    python attendance_checker.py
    ```
 
-   If you are using Windows, you can also run:
+   On Windows, you can also run:
 
    ```bash
    py attendance_checker.py
@@ -38,10 +39,10 @@ The Student Attendance Checker is a simple Python program that allows users to a
 
 4. Follow the menu options displayed on the screen.
 
-# Note
+## Note
 
 Attendance records are stored temporarily while the program is running. The records will reset when the program is closed.
 
-# Programming Language
+## Programming Language
 
 Python
